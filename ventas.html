@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>Flawless Template</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,700" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/icomoon.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+
+
+	<!--firebase conexion-->
+
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">BIG GYM GOLD</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li><a href="index.html">Inicio</a></li>
+								<li class="has-dropdown">
+									<a href="classes.html">Clases</a>
+									<ul class="dropdown">
+										<li><a href="classes-single.html">Clases Solitario</a></li>
+										<li><a href="#">Clases solitarias</a></li>
+										<li><a href="#">Clases de cardio</a></li>
+										<li><a href="#">Clases de musculatura</a></li>
+										<li><a href="#">Clases de Fitness</a></li>
+										<li><a href="#">Contruscion de cuerpo</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href>Calendario</a></li>-->
+								<li><a href="about.html">Entrenadores</a></li>
+								<li><a href="event.html">Eventos</a></li>
+								<!-- <li><a href>Blog</a></li>-->
+								<li><a href="shop.html">Tienda</a></li>
+								<li><a href>Contactos</a></li>
+								<li><a href>Quienes somos</a></li>
+								<li><a href="login.html">iniciar sesion</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--Texto de Presentacion-->
+		<aside id="colorlib-hero" class="colorlib-degree-bg">
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/ventas_fondo.jpg);">
+						<div class="overlay"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
+									<div class="slider-text-inner text-center">
+										<h1>Administración de Ventas</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<!-- Modulo Usuario-->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Modulo <small> Administrar
+								Productos</small></h1>
+					</div>
+					<div class="col-md-2">
+						<div class="dropdown create">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Crear Contenido
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a type="button" data-toggle="modal" data-target="#addPage">Agregar Usuario</a></li>
+								<li><a href="#">Agregar Entrada</a></li>
+								<li><a href="#">Agregar Usuario</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Modulo de usuarios-->
+		<!--Barra de busqueda-->
+		<section id="breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="index.html">Panel de Control</a></li>
+					<li class="active">Ventas</li>
+				</ol>
+			</div>
+		</section>
+
+		<section id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="list-group">
+							<a class="list-group-item active color-principal">
+								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Panel de Control
+							</a>
+							<a href="gimnasio.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> informacion gimnasio
+								<span class="badge">1</span></a>
+							<a href="empleados.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> empleados <span class="badge">20</span></a>
+							<a href="clientes.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> clientes <span class="badge">340</span></a>
+							<a href="rutina.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> rutinas <span class="badge">7</span></a>
+							<a href="productos.html" class="list-group-item"><span class="glyphicon glyphicon-uno"
+									aria-hidden="true"></span> Productos <span class="badge">1200</span></a>
+							<a href="ventas.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> ventas <span class="badge">2300</span></a>
+							<a href="proovedores.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> proovedores <span class="badge">25</span></a>
+							<a href="planes.html" class="list-group-item"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> planes <span class="badge">7</span></a>
+
+						</div>
+
+						<div class="well">
+							<h4>Espacio en Disco</h4>
+							<div class="progress">
+								<div class="barra-progreso" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+									aria-valuemax="100" style="width: 40%;">
+									40%
+								</div>
+							</div>
+							<h4>Ancho de Banda </h4>
+							<div class="progress">
+								<div class="barra-progreso" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+									aria-valuemax="100" style="width: 75%;">
+									75%
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<!-- Website Overview -->
+						<div class="panel panel-default">
+							<div class="panel-heading main-color-bg">
+								<h3 class="panel-title">Consultas</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<input class="form-control" type="text" placeholder="Filtrar ventas...">
+									</div>
+								</div>
+								<br>
+
+								<!--inicia aqui-->
+								<div class="container" id="advanced-search-form">
+									<h2>Registro ventas</h2>
+									<form>
+										<div class="form-group">
+											<label for="first-name">N° venta</label>
+											<input type="text" class="form-control" placeholder="N° venta" id="venta"
+												style="width:400px">
+										</div>
+										<div class="form-group">
+											<label for="first-name">COD Cliente</label>
+											<input type="text" class="form-control" placeholder="cod cliente"
+												id="codigocliente" style="width:400px">
+										</div>
+										<div class="form-group">
+											<label for="last-name">producto de venta</label>
+											<input type="text" class="form-control" placeholder="producto"
+												id="productoventa" style="width:400px">
+										</div>
+
+										<div class="form-group">
+											<label for="number">cantidad</label>
+											<input type="text" class="form-control" placeholder="cantidad"
+												id="cantidadproducto" style="width:400px">
+										</div>
+										<div class="form-group">
+											<label for="number">precio unitario</label>
+											<input type="text" class="form-control" placeholder="precio unitario"
+												id="preciounitario" style="width:400px">
+										</div>
+										<div class="form-group">
+											<label for="number">precio total</label>
+											<input type="text" class="form-control" placeholder="precio total"
+												id="preciototal" style="width:400px">
+										</div>
+										<div class="clearfix"></div>
+										<button type="button" onclick="guardarventa()"
+											class="btn btn-info btn-lg btn-responsive" id="botonguardarventa">
+											<span class="glyphicon glyphicon-search"></span>guardar venta</button>
+									</form>
+								</div>
+
+
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th scope="col">N° Venta</th>
+											<th scope="col">Cliente</th>
+											<th scope="col">producto</th>
+											<th scope="col">cantidad</th>
+											<th scope="col">precio U</th>
+											<th scope="col">precio total</th>
+										</tr>
+									</thead>
+									<tbody id="tablaventas">
+
+									</tbody>
+
+									<!--<td width>
+										<center><input type="button" value="Editar">&nbsp &nbsp<input type="button"
+												value="Eliminar"></center>
+									</td>-->
+								</table>
+
+							</div>
+
+							<footer id="footer">
+								<p>Copyright AppAdmin, &copy; 2017</p>
+							</footer>
+
+							<!-- Modals -->
+
+
+
+
+							<!--PIE DE PAGINA-->
+
+
+							<!-- jQuery -->
+							<script src="js/jquery.min.js"></script>
+							<!-- jQuery Easing -->
+							<script src="js/jquery.easing.1.3.js"></script>
+							<!-- Bootstrap -->
+							<script src="js/bootstrap.min.js"></script>
+							<!-- Waypoints -->
+							<script src="js/jquery.waypoints.min.js"></script>
+							<!-- Stellar Parallax -->
+							<script src="js/jquery.stellar.min.js"></script>
+							<!-- Flexslider -->
+							<script src="js/jquery.flexslider-min.js"></script>
+							<!-- Owl carousel -->
+							<script src="js/owl.carousel.min.js"></script>
+							<!-- Magnific Popup -->
+							<script src="js/jquery.magnific-popup.min.js"></script>
+							<script src="js/magnific-popup-options.js"></script>
+							<!-- Counters -->
+							<script src="js/jquery.countTo.js"></script>
+							<!-- Date Picker -->
+							<script src="js/bootstrap-datepicker.js"></script>
+							<!-- Main -->
+							<script src="js/main.js"></script>
+
+							<script src="js/ventas.js"></script>
+
+</body>
+
+</html>

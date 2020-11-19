@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesreg.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="container" id="advanced-search-form">
+        <h2>Registro</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">Primer Nombre</label>
+                <input type="text" class="form-control" placeholder="Primer Nombre" id="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Segundo Nombre</label>
+                <input type="text" class="form-control" placeholder="Segundo Nombre" id="last-name">
+            </div>
+
+            <div class="form-group">
+                <label for="number">Numero celular</label>
+                <input type="text" class="form-control" placeholder="Numero celular" id="number">
+            </div>
+            <div class="form-group">
+                <label for="age">Edad</label>
+                <input type="text" class="form-control" placeholder="Edad" id="age">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="email" id="email">
+            </div>
+            <div class="form-group"> 
+                    <label for="contra">contraseña</label>
+                    <input type="password" class="form-control" placeholder="contra" id="contra">
+            </div>
+
+            <div class="clearfix"></div>
+            <button type="button" onclick="registrar()" class="btn btn-info btn-lg btn-responsive" id="search"> <span
+                    class="glyphicon glyphicon-search"></span> registar</button>
+                     
+        </form>
+
+    </div>
+   
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <!--Firebase Firestore (Base de datos)-->
+    
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    
+    
+    <script src="js/base.js"></script>
+
+</body>
+
+</html>
